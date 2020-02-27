@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MiContador</string>
+    <string name="lblBtnInc">Incrementar</string>
+    <string name="lblBtnRes">Reiniciar</string>
+    <string name="lblBtnDec">Decrementar</string>
+</resources>

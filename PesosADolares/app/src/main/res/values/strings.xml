@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PesosADolares</string>
+    <string name="lblDolares">Dolares</string>
+    <string name="lblEuros">Euros</string>
+    <string name="lblYenes">Yenes</string>
+    <string name="lblLibras">Libras</string>
+</resources>

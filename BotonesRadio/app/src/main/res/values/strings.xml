@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BotonesRadio</string>
+    <string name="lblbrSuma">Sumar</string>
+    <string name="lblResta">Resta</string>
+    <string name="lblbrMulti">Multiplicar</string>
+    <string name="lblbrDiv">Dividir</string>
+    <string name="lblCalcular">Calcular</string>
+    <string name="txtNum1">Numero Entero</string>
+    <string name="txtNum2">Numero Entero</string>
+</resources>
