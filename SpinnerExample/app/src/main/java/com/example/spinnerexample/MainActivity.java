@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Configurar el Spinner
         String [] operacion = {"Suma", "Resta", "Multiplicacion", "Division"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, operacion);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_spinner_elements, operacion);
         sp.setAdapter(adapter);
     }
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else if (op.equals("Division"))
         {
-            if (n1 == 0 && n2 == 0) {
+            if (n1 == 0 || n2 == 0) {
                 Toast.makeText(this, "Introduce numeros mayores que cero", Toast.LENGTH_SHORT).show();
         } else
             {
