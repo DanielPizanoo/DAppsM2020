@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListViewExamples</string>
+    <string name="lbl">Selecciona una opcion:</string>
+</resources>
