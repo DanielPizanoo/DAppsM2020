@@ -23,19 +23,20 @@ public class MainActivity extends AppCompatActivity {
 
         lista = (ListView) findViewById(R.id.listview);
 
-        /**
+
         String [] municipios = {"Armeria", "Colima", "Coquimatlan", "Comala", "Cuauhtemoc", "Ixtlahuacan", "Manzanillo",
                 "Minatitlan", "Tecoman", "Villa de Alvarez"};
-        */
 
+        /**
         Datos A = new Datos();
         A.setNmunicipio(1);
         A.setNombre("Armeria");
         A.setExtension("232 km2");
         A.setExtension("www.armeria.com");
-        municipios.add(A);
+        datos.add(A);
+         */
 
-        final ArrayAdapter <Datos> adapter = new ArrayAdapter<Datos>(this, R.layout.list_item_listview, municipios);
+        final ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_listview, municipios);
 
         lista.setAdapter(adapter);
 
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Metodo para imprimir el municipio con alertdialog
      */
-    public void printInfo(int i) {
+    public void printInfo(String info) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Información");
         builder.setMessage(municipios[i].toString());
