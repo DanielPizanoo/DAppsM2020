@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WebViewExample</string>
+    <string name="btnEt">Desplegar</string>
+    <string name="lblEdit">Ingresa URL</string>
+
+    <string name="lblBtnCerrar">Cerrar</string>
+    <string name="lblSwitch">URL Manual</string>
+</resources>
