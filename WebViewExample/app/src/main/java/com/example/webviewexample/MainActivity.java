@@ -3,10 +3,13 @@ package com.example.webviewexample;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.method.KeyListener;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Switch;
@@ -17,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btnIr;
     private Switch btnswitch;
     private Spinner sp;
+    private KeyListener listener;
+    private String url=null;
+    private boolean bandera =  false;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -28,25 +34,35 @@ public class MainActivity extends AppCompatActivity {
         btnswitch = (Switch) findViewById(R.id.switch1);
         sp = (Spinner) findViewById(R.id.spinner);
 
-        if (btnswitch.isChecked()) {
-            sp.setEnabled(false);
-            txtCampo.setEnabled(true);
-        } else {
-            sp.setEnabled(true);
-            txtCampo.setEnabled(false);
-        }
-
+        //Configuramos el Spinner
         String [] direcciones = {"www.google.com", "www.colima.tecnm.mx", "www.facebook.com"};
         ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, direcciones);
         sp.setAdapter(adapter);
 
-        btnswitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        //Deshabilitamos caja de texto
+        sp.setEnabled(true);
+        txtCampo.setEnabled(false);
 
+        //Manejamos el evento de boton de Switch
+        btnswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean b) {
+                //Boton de Switch encendido
+                if (b) {
+                    listener = txtCampo.getKeyListener();
+                    //Habilitar el spinner y deshabilitar la caja de texto
+                    sp.setEnabled(true);
+                    //Deshabilitar la caja de texto
+                    txtCampo.setActivated(false);
+                    txtCampo.setEnabled(false);
+                    bandera = true;
+                } else {
+                    //El usuario quiere teclear una url
+                    sp.setEnabled(false);
+                    txtCampo.setEnabled(true);
+                }
             }
         });
-
     }
 
     /**
@@ -54,9 +70,14 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void irAlaURL(View v) {
-        String url = txtCampo.getText().toString();
-        Intent i = new Intent(this, Main2Activity.class);
-        i.putExtra("url", url);
-        startActivity(i);
+        if (bandera == true) {
+            url = sp.getSelectedItem().toString();
+        }
+        else {
+            String url = txtCampo.getText().toString();
+            Intent i = new Intent(this, Main2Activity.class);
+            i.putExtra("url", url);
+            startActivity(i);
+        }
     }
 }

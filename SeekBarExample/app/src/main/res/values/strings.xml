@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SeekBarExample</string>
+    <string name="lbltextview">Valor: </string>
+</resources>
