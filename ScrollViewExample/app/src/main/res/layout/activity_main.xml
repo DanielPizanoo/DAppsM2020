@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/audioonoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/btnswitch" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="409dp"
+        android:layout_height="558dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audioonoff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/zorro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorPressedHighlight"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/zorro" />
+
+            <ImageView
+                android:id="@+id/lobo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3D5AFE"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/lobo" />
+
+            <ImageView
+                android:id="@+id/alce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/alce" />
+
+            <ImageView
+                android:id="@+id/camaron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorActivatedHighlight"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/camaron" />
+
+            <ImageView
+                android:id="@+id/gusano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D30202"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/gusano" />
+
+            <ImageView
+                android:id="@+id/jirafa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BC4313"
+                android:clickable="false"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/jirafa" />
+
+            <ImageView
+                android:id="@+id/mono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C6FF00"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/mono" />
+
+            <ImageView
+                android:id="@+id/pajaro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1DE9B6"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/pajaro" />
+
+            <ImageView
+                android:id="@+id/pato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#651FFF"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/pato" />
+
+            <ImageView
+                android:id="@+id/perro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#33691E"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/perro" />
+
+            <ImageView
+                android:id="@+id/pinguino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFE57F"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/pinguino" />
+
+            <ImageView
+                android:id="@+id/raro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F34D4A"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/raro" />
+
+            <ImageView
+                android:id="@+id/tortuga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A7FFEB"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/tortuga" />
+
+            <ImageView
+                android:id="@+id/vaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9E80"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/vaca" />
+
+            <ImageView
+                android:id="@+id/zebra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF00"
+                android:contentDescription="@string/contexto"
+                android:onClick="getAnimalName"
+                app:srcCompat="@drawable/zebra" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

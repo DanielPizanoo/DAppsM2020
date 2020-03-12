@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Animales</string>
+    <string name="btnswitch">Activar audio</string>
+    <string name="contexto">Descripcion</string>
+</resources>
