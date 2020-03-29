@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SharePreferencesExample</string>
+    <string name="campo">Correo Electrónico</string>
+    <string name="boton">Guardar y Salir</string>
+</resources>

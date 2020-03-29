@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ActionBarExample</string>
+    <string name="opcion1">Agregar</string>
+    <string name="opcion2">Buscar</string>
+    <string name="opcion3">Salir</string>
+    <string name="campana">Campana</string>
+    <string name="location">Location</string>
+</resources>
