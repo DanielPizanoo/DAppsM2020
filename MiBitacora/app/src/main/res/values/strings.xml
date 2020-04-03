@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MiBitacora</string>
+    <string name="lblBoton">Guardar</string>
+</resources>
