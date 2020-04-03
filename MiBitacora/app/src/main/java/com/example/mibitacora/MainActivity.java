@@ -3,6 +3,8 @@ package com.example.mibitacora;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -64,6 +66,26 @@ public class MainActivity extends AppCompatActivity {
 
     //Metodo para guardar la bitacora tecleada por el usuario en el campo de texto en un archivo bitacora.txt
     public void Guardar(View vista) {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Importante");
+        builder.setMessage("¿Quiere guardar los cambios?");
+        builder.setCancelable(false);
+        builder.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface builder, int id) {
+                aceptar();
+            }
+        });
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                cancelar();
+            }
+        });
+        builder.show();
+    }
+    public void aceptar() {
         try {
             OutputStreamWriter archivo = new OutputStreamWriter(openFileOutput("bitacora.txt", Activity.MODE_PRIVATE));
             archivo.write(txt.getText().toString());
@@ -72,10 +94,10 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException closed) {
 
         }
-
-        Toast.makeText(this, "Archivo guardado correctamente", Toast.LENGTH_SHORT).show();
-        //Cerrar aplicacion
         finish();
+    }
+
+    public void cancelar() {
 
     }
 }

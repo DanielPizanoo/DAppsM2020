@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">SharePreferencesExample</string>
+    <string name="numcontrol">Numero de Control</string>
+    <string name="nombre">Nombre</string>
     <string name="campo">Correo Electrónico</string>
+    <string name="telefono">Telefono</string>
+    <string name="imagen">Cargar Imagen</string>
     <string name="boton">Guardar y Salir</string>
 </resources>
