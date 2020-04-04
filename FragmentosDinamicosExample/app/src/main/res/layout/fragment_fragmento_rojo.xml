@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    tools:context=".FragmentoRojo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="Suma"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="60dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="Ingrese un numero"
+        android:id="@+id/sum1"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="60dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="Ingrese un numero"
+        android:id="@+id/sum2"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/btnSumar"
+        android:text="Calcular"
+        android:onClick="OnClick"/>
+
+</FrameLayout>

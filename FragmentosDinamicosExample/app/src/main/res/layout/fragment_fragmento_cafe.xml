@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5BE4C"
+    tools:context=".FragmentoCafe">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="División"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="60dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="Ingrese un numero"
+        android:id="@+id/div1"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="60dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="Ingrese un numero"
+        android:id="@+id/div2"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="110dp"
+        android:text="Calcular"
+        android:id="@+id/btnDivi"
+        android:onClick="OnClick"/>
+
+</FrameLayout>
