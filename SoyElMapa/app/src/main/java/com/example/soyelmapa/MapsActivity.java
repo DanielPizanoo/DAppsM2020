@@ -51,9 +51,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng rest = new LatLng(19.2555021,-103.7068396);
         LatLng supermarket = new LatLng(19.2808843,-103.7333031);
         LatLng hospital = new LatLng(19.2581459,-103.6920233);
+        LatLng gas = new LatLng(19.2581459,-103.6925033);
 
         // Asignar posiciones a cada marcador
-        mMap.addMarker(new MarkerOptions().position(school));
+        /**mMap.addMarker(new MarkerOptions().position(school));
         mMap.addMarker(new MarkerOptions().position(casino));
         mMap.addMarker(new MarkerOptions().position(gym));
         mMap.addMarker(new MarkerOptions().position(fly));
@@ -62,20 +63,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(cine));
         mMap.addMarker(new MarkerOptions().position(rest));
         mMap.addMarker(new MarkerOptions().position(supermarket));
-        mMap.addMarker(new MarkerOptions().position(hospital));
+        mMap.addMarker(new MarkerOptions().position(hospital));*/
 
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_tecc)).anchor(0.0f, 1.0f).position(school));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_casino)).anchor(0.0f, 1.0f).position(casino));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_gym)).anchor(0.0f, 1.0f).position(gym));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_fly)).anchor(0.0f, 1.0f).position(fly));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_hotel)).anchor(0.0f, 1.0f).position(hotel));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_banco)).anchor(0.0f, 1.0f).position(banco));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_cine)).anchor(0.0f, 1.0f).position(cine));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_restaurant)).anchor(0.0f, 1.0f).position(rest));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_store)).anchor(0.0f, 1.0f).position(supermarket));
-        //mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_hospital)).anchor(0.0f, 1.0f).position(hospital));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_gas)).anchor(0.0f,1.0f).position(gas));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_tecc)).anchor(0.0f, 1.0f).position(school));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_casino)).anchor(0.0f, 1.0f).position(casino));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_gym)).anchor(0.0f, 1.0f).position(gym));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_fly)).anchor(0.0f, 1.0f).position(fly));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_hotel)).anchor(0.0f, 1.0f).position(hotel));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_banco)).anchor(0.0f, 1.0f).position(banco));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_cine)).anchor(0.0f, 1.0f).position(cine));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_restaurant)).anchor(0.0f, 1.0f).position(rest));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_store)).anchor(0.0f, 1.0f).position(supermarket));
+        mMap.addMarker(new MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_hospital)).anchor(0.0f, 1.0f).position(hospital));
 
         //Modificar el valor de Zoom
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(school, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(school, 5));
     }
 }
