@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnR, btnB;
+    Button btnR, btnB, btnL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnR = (Button) findViewById(R.id.btnCallRegistrar);
         btnB = (Button) findViewById(R.id.btnBuscar);
+        btnL = (Button) findViewById(R.id.btnReporte);
     }
 
     public void insertarEmpleado(View v) {
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void buscarEmpleado(View v) {
         Intent i = new Intent(MainActivity.this, ConsultarEmpleadoActivity.class);
+        startActivity(i);
+    }
+
+    public void listarEmpleado(View v) {
+        Intent i = new Intent(MainActivity.this, ConsultarListViewEmpleado.class);
         startActivity(i);
     }
 }

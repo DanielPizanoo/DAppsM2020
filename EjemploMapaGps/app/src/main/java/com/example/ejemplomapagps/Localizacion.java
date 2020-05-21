@@ -6,7 +6,6 @@ import android.location.LocationProvider;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
-
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -72,14 +71,12 @@ public class Localizacion implements LocationListener  {
             case LocationProvider.TEMPORARILY_UNAVAILABLE:
                 Log.d(TAG, "LocationProvider.TEMPORARILY_UNAVAILABLE");
                 break;
-
         }
     }
 
     @Override
     public void onProviderEnabled(String s) {
         tvMensaje.setText("GPS Disponible");
-
     }
 
     @Override

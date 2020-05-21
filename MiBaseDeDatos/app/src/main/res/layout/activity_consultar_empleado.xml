@@ -42,13 +42,13 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="37dp"
         android:layout_marginEnd="55dp"
-        android:onClick="consultarEmpleado"
+        android:onClick="onClick"
         android:text="@string/lblbtBuscar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtClave"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtNombre"
         android:layout_width="365dp"
         android:layout_height="41dp"
@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtClave" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtSueldo"
         android:layout_width="365dp"
         android:layout_height="41dp"
@@ -77,5 +77,38 @@
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <Button
+        android:id="@+id/btnCambiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="145dp"
+        android:onClick="onClick"
+        android:text="@string/lblBtnCambiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSueldo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="146dp"
+        android:onClick="onClick"
+        android:text="@string/lblntnEliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCambiar"
+        app:layout_constraintTop_toBottomOf="@+id/txtSueldo" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

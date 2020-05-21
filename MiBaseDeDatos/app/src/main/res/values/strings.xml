@@ -2,4 +2,7 @@
     <string name="app_name">MiBaseDeDatos</string>
     <string name="lblbtBuscar">Buscar</string>
     <string name="lblBtnBuscar">BUSCAR EMPLEADO</string>
+    <string name="lblBtnCambiar">Modificar</string>
+    <string name="lblntnEliminar">Eliminar</string>
+    <string name="lblbtnReporte">Listar Empleados</string>
 </resources>
