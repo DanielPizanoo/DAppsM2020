@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Oprimio el icono de localizacion", Toast.LENGTH_SHORT).show();
         }
 
-
         return super.onOptionsItemSelected(item);
     }
 

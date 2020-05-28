@@ -5,4 +5,8 @@
     <string name="lblBtnCambiar">Modificar</string>
     <string name="lblntnEliminar">Eliminar</string>
     <string name="lblbtnReporte">Listar Empleados</string>
+    <string name="lblInsertar">Registrar</string>
+    <string name="lblEditar">Editar</string>
+    <string name="lblListar">Listar</string>
+    <string name="lblSalir">Salir</string>
 </resources>
