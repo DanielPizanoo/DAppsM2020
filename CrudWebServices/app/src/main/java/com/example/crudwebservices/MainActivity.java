@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         btnInsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ejecutarServicioWeb("http://192.168.0.18/WebServices/registroEmpleado.php");
+                ejecutarServicioWeb("http://192.168.0.14/WebServices/registraEmpleado.php");
             }
         });
     }
